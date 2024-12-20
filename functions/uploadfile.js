@@ -14,7 +14,7 @@ const s3 = new AWS.S3({
     s3ForcePathStyle: true,                   // Required for Storj
 });
 
-const BUCKET_NAME = 'your-bucket-name';
+const BUCKET_NAME = 'fileruntrial';
 
 app.post('/upload', upload.single('file'), async (req, res) => {
     try {
